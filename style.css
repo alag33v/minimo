@@ -1,0 +1,292 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #626262;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Первый блок (header) */
+
+.header {
+  padding-top: 65px;
+  min-height: 674px;
+  background-color: #fff;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo a {
+  font-family: 'Inconsolata', monospace;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  margin-left: 70px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 50px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  transition: color .1s linear;
+}
+
+.nav__link:last-child {
+  margin-right: 70px;
+}
+
+.nav a {
+  color: #626262;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link:hover  {
+  color: #000;
+}
+
+.main__photo {
+  margin-top: 51px;
+  margin-left: 70px;
+}
+
+/* Второй блок (review) */
+
+.section {
+  padding-top: 95px;
+}
+
+.review {
+  min-height: 420px;
+  padding: 0 150px;
+}
+
+.review__suptitle {
+  font-family: 'Ubuntu', sans-serif;
+  color: #b4ad9e;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.review__title {
+  color: #626262;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.review__content {
+  color: #626262;
+  font-size: 14px;
+  font-weight: 400;
+  width: 900px;
+  margin-top: 25px;
+}
+
+.review__suptitle.feedback {
+  margin-top: 50px;
+}
+
+/* Третий блок (lifestyle) */
+
+.lifestyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 1115px;
+}
+
+.lifestyle__inner:nth-child(odd) {
+  padding-left: 150px;
+}
+
+.lifestyle__inner:nth-child(even) {
+  padding-right: 150px;
+}
+
+.lifestyle__inner:nth-child(n+3) {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.lifestyle__suptitle {
+  font-family: 'Ubuntu', sans-serif;
+  color: #b4ad9e;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.lifestyle__title {
+  color: #626262;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.lifestyle__content  {
+color: #626262;
+font-size: 14px;
+font-weight: 400;
+width: 420px;
+margin-top: 20px;
+}
+
+/* Четвёртый блок (sign up) */
+
+.sign-up {
+  width: 100%;
+  min-height: 287px;
+  position: relative;
+}
+
+.sign-up__title {
+  color: #333333;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  margin-top: -95px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.sign-up form {
+  text-align: center;
+}
+
+input[type="email"] {
+  border: none;
+  color: #626262;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 235px 10px 5px;
+  border-bottom: 2px solid #000000;
+}
+
+input[type="email"]::placeholder  {
+  text-align: start;
+  vertical-align: top;
+}
+
+input[type="email"]:focus {
+  outline-color: #000000;
+  border: 2px solid #000000;
+}
+
+.sign-up__icon {
+  position: absolute;
+  top: 203px;
+  right: 410px;
+}
+
+.section--gray {
+  background-color: #f0f0f0;
+}
+
+/* Пятый блок (photo diary) */
+
+.photo-diary {
+  min-height: 680px;
+}
+
+.photo-diary__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.button {
+  color: #626262;
+  font-size: 20px;
+  font-weight: 400;
+
+  display: block;
+  width: 164px;
+  height: 60px;
+  border: 1px solid #626262;
+  line-height: 60px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 125px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.button:hover {
+  background-color: #6262622a;
+  color: #000;
+
+}
+
+/* Шестой блок (footer) */
+
+.footer {
+  margin-top: 100px;
+  background-color: #f0f0f0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.social-left {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 180px;
+}
+
+.social a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.social-right {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 180px;
+}
+
+.social-right__images img {
+  padding: 0 10px;
+}
+
+.social-right__images:last-child {
+  padding-right: 50px;
+}
